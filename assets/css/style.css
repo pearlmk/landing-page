@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  transform: all 1s;
+}
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* navber */
+.nav-link {
+  margin: 0 10px;
+  text-transform: uppercase;
+}
+/* service img */
+.img-top {
+  transition: 1s;
+}
+.card-outline {
+  overflow: hidden;
+}
+.img-top:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+/* navber */
+@media screen and (min-width: 922px) {
+  .nav-link {
+    margin: 0 10px;
+    border-bottom: 3px solid transparent;
+  }
+  .nav-link:hover {
+    border-bottom: 3px solid blue;
+    transition: all 1s;
+  }
+  .active {
+    border-bottom: 3px solid blue;
+  }
+}
